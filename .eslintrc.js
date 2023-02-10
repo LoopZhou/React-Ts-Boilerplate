@@ -22,6 +22,8 @@ module.exports = {
   rules: {
     // suppress errors for missing 'import React' in files。忽略文件中没有import React语句
     'react/react-in-jsx-scope': 'off',
+    // allow jsx syntax in js files (for next.js project)
+    'react/jsx-filename-extension': [1, { 'extensions': ['.js', '.jsx', '.ts', 'tsx'] }],
     '@typescript-eslint/ban-ts-ignore': 'off',
     '@typescript-eslint/no-unused-vars': 'off',
     '@typescript-eslint/explicit-function-return-type': 'off',
