@@ -5,6 +5,7 @@ import { useRoutes } from 'react-router-dom';
 
 import Home from '@/views/Home';
 import Demo from '@/views/Demo';
+import Store from '@/views/StoreDemo';
 
 function App() {
   const element = useRoutes([
@@ -13,6 +14,7 @@ function App() {
       element: <Home />,
     },
     { path: 'demo', element: <Demo /> },
+    { path: 'store', element: <Store /> },
   ]);
 
   return element;
